@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C6179564291BAA170049DCB4 /* CrashingFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62F3D9B291BA58000819F78 /* CrashingFramework.framework */; };
-		C6179565291BAA170049DCB4 /* CrashingFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C62F3D9B291BA58000819F78 /* CrashingFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C62F3D81291BA42400819F78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F3D80291BA42400819F78 /* AppDelegate.swift */; };
 		C62F3D83291BA42400819F78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F3D82291BA42400819F78 /* SceneDelegate.swift */; };
 		C62F3D85291BA42400819F78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F3D84291BA42400819F78 /* ViewController.swift */; };
@@ -17,26 +15,18 @@
 		C62F3D8D291BA42600819F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62F3D8B291BA42600819F78 /* LaunchScreen.storyboard */; };
 		C62F3D9E291BA58100819F78 /* CrashingFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C62F3D9D291BA58100819F78 /* CrashingFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C62F3DA7291BA58900819F78 /* AnyCrashTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F3D94291BA44000819F78 /* AnyCrashTest.swift */; };
+		C64A29A5291CE0E000151F5D /* CrashingFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62F3DA8291BA6DB00819F78 /* CrashingFramework.xcframework */; };
+		C64A29A6291CE0E000151F5D /* CrashingFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C62F3DA8291BA6DB00819F78 /* CrashingFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C6179566291BAA170049DCB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C62F3D75291BA42400819F78 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C62F3D9A291BA58000819F78;
-			remoteInfo = CrashingFramework;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		C6179568291BAA170049DCB4 /* Embed Frameworks */ = {
+		C64A29A7291CE0E000151F5D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C6179565291BAA170049DCB4 /* CrashingFramework.framework in Embed Frameworks */,
+				C64A29A6291CE0E000151F5D /* CrashingFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6179564291BAA170049DCB4 /* CrashingFramework.framework in Frameworks */,
+				C64A29A5291CE0E000151F5D /* CrashingFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,12 +138,11 @@
 				C62F3D79291BA42400819F78 /* Sources */,
 				C62F3D7A291BA42400819F78 /* Frameworks */,
 				C62F3D7B291BA42400819F78 /* Resources */,
-				C6179568291BAA170049DCB4 /* Embed Frameworks */,
+				C64A29A7291CE0E000151F5D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C6179567291BAA170049DCB4 /* PBXTargetDependency */,
 			);
 			name = AnyTest;
 			productName = AnyTest;
@@ -255,14 +244,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C6179567291BAA170049DCB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C62F3D9A291BA58000819F78 /* CrashingFramework */;
-			targetProxy = C6179566291BAA170049DCB4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C62F3D86291BA42400819F78 /* Main.storyboard */ = {
