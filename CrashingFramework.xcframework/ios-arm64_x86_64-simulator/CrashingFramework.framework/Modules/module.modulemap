@@ -1,0 +1,11 @@
+framework module CrashingFramework {
+  umbrella header "CrashingFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module CrashingFramework.Swift {
+  header "CrashingFramework-Swift.h"
+  requires objc
+}

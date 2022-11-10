@@ -1,0 +1,29 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CrashingFramework
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import CrashingFramework
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+#if compiler(>=5.3) && $PrimaryAssociatedTypes2
+public protocol Provider<T> {
+  associatedtype T : Swift.Decodable
+  func fetchObject() -> Self.T
+}
+#else
+public protocol Provider {
+  associatedtype T : Swift.Decodable
+  func fetchObject() -> Self.T
+}
+#endif
+@_hasMissingDesignatedInitializers final public class DefaultProvider : CrashingFramework.Provider {
+  public typealias T = Swift.String
+  final public func fetchObject() -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class AnyCrashTest {
+  convenience public init()
+  @objc deinit
+}

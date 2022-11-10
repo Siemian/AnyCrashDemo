@@ -1,0 +1,168 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrashingFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Provider",
+        "printedName": "Provider",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "T",
+            "printedName": "T",
+            "declKind": "AssociatedType",
+            "usr": "s:17CrashingFramework8ProviderP1TQa",
+            "mangledName": "$s17CrashingFramework8ProviderP1TQa",
+            "moduleName": "CrashingFramework",
+            "protocolReq": true
+          },
+          {
+            "kind": "Function",
+            "name": "fetchObject",
+            "printedName": "fetchObject()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.T"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CrashingFramework8ProviderP11fetchObject1TQzyF",
+            "mangledName": "$s17CrashingFramework8ProviderP11fetchObject1TQzyF",
+            "moduleName": "CrashingFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : CrashingFramework.Provider>",
+            "sugared_genericSig": "<Self where Self : CrashingFramework.Provider>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17CrashingFramework8ProviderP",
+        "mangledName": "$s17CrashingFramework8ProviderP",
+        "moduleName": "CrashingFramework",
+        "genericSig": "<τ_0_0.T : Swift.Decodable>",
+        "sugared_genericSig": "<Self.T : Swift.Decodable>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DefaultProvider",
+        "printedName": "DefaultProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchObject",
+            "printedName": "fetchObject()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17CrashingFramework15DefaultProviderC11fetchObjectSSyF",
+            "mangledName": "$s17CrashingFramework15DefaultProviderC11fetchObjectSSyF",
+            "moduleName": "CrashingFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17CrashingFramework15DefaultProviderC",
+        "mangledName": "$s17CrashingFramework15DefaultProviderC",
+        "moduleName": "CrashingFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Provider",
+            "printedName": "Provider",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "T",
+                "printedName": "T",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:17CrashingFramework8ProviderP",
+            "mangledName": "$s17CrashingFramework8ProviderP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnyCrashTest",
+        "printedName": "AnyCrashTest",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyCrashTest",
+                "printedName": "CrashingFramework.AnyCrashTest",
+                "usr": "s:17CrashingFramework12AnyCrashTestC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17CrashingFramework12AnyCrashTestCACycfc",
+            "mangledName": "$s17CrashingFramework12AnyCrashTestCACycfc",
+            "moduleName": "CrashingFramework",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17CrashingFramework12AnyCrashTestC",
+        "mangledName": "$s17CrashingFramework12AnyCrashTestC",
+        "moduleName": "CrashingFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
